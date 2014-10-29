@@ -1,0 +1,534 @@
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/*SESAO TELA LOGIN*/
+#barra_hor {
+	width: 100%;
+	height: 250px;
+	position: absolute;
+	/* posiciona em  relação ao canto superior esquerdo da tela */
+	top: 40%; /* posiciona no centro (centro + altura da div)*/
+	margin-top: -92px; /* pega-se o tamanho da div e divide por dois*/
+}
+
+#erros_div {
+	width: 100%;
+	height: 250px;
+	position: absolute;
+	/* posiciona em  relacao ao canto superior esquerdo da tela */
+	top: 72%; /* posiciona no centro (centro + altura da div)*/
+	margin-top: -92px; /* pega-se o tamanho da div e divide por dois*/
+	font-size: 14px;
+	color: #990000;
+	font-weight: bold;
+	text-align: center;
+}
+
+input {
+	background-color: #ffffff;
+	font-family: Helvetica, arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #990000;
+	border: 4px solid #ffffff;
+}
+
+#rodape {
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	display: table;
+	clear: both;
+	bottom: 0px;
+	width: 100%;
+	background-color: #d577d5;
+	border-top-width: 6px;
+	border-top-style: solid;
+	border-top-color: 444444;
+}
+
+#box_login{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-249px;
+	margin-top:-157px;
+	width:498px;
+	height:314px;
+}
+
+.box_login_top{
+	width:498px;
+	height:27px;
+	background-image:url(../img_admin/top_box_login.png);
+	background-repeat:no-repeat;
+}
+
+.box_login_center{
+	width:498px;
+	height:200px;
+	padding-top:10px;
+	background-image:url(../img_admin/center_box_login.png);
+	background-repeat:repeat-y;
+}
+
+.box_login_center p {
+    text-align: center;
+}
+
+
+.box_login_botton{
+	width:498px;
+	height:27px;
+	background-image:url(../img_admin/botton_box_login.png);
+	background-repeat:no-repeat;
+}
+
+.box_login_botton{
+	width:498px;
+	height:27px;
+	background-image:url(../img_admin/botton_box_login.png);
+	background-repeat:no-repeat;
+}
+
+.input_login{
+	width:351px;
+	height:18px;
+	padding:5px;
+	line-height:18px;
+	margin-left:68px;
+	margin-bottom:10px;
+	background-image:url(../img_admin/imput_login.gif);
+	background-repeat:no-repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#00427a;
+}
+
+.bt_login{
+	width:82px;
+	height:28px;
+	cursor:pointer;
+	margin-left:347px;
+}
+
+.logo{
+	margin:0 auto;
+	width:354px;
+	height:136px;
+	margin-bottom:18px;
+}
+
+.texto_login_top{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#999;
+	margin-left:72px;
+}
+
+.texto_login_botton{
+	margin:0 auto;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	color:#999;
+	margin-top:6px;
+	text-align:right;
+}
+
+.texto_login_botton a{
+	margin:0 auto;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	color:#999;
+	margin-top:6px;
+	text-align:right;
+	text-decoration:none;
+}
+.texto_login_botton a:hover{
+	text-decoration:underline;
+}
+
+/* PRINCIPAL*/
+#barra_top {
+	width: 100%;
+	height: 70px;
+	background-image: url(../img_admin/topo_replica.gif);
+}
+
+#logo_updater {
+	float: left;
+	width: 244px;
+}
+
+#logo_criativitta {
+	float: right;
+	width: 177px;
+}
+
+#menu {
+	width: 100%;
+	height: 20px;
+	padding-top: 5px;
+	background-color: #f1f3f5;
+	border-bottom-color: #cdcdcd;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+#menu a:link {
+	text-decoration: none;
+	font-family: helvetica, arial;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 4px;
+	border-right-style: dotted;
+	border-right-width: 1px;
+	border-right-color: #CCCCCC;
+	color: #333333;
+}
+
+#menu a:hover {
+	text-decoration: none;
+	font-family: helvetica, arial;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 4px;
+	border-right-style: dotted;
+	border-right-width: 1px;
+	border-right-color: #CCCCCC;
+	color: #FFFFFF;
+	background-color: #b7b7b7;
+}
+
+#menu a:visited {
+	text-decoration: none;
+	font-family: helvetica, arial;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 4px;
+	border-right-style: dotted;
+	border-right-width: 1px;
+	border-right-color: #a10000;
+	color: #333333;
+}
+
+/*LISTAS - ALTERNANCIA DE CORES NAS LINHAS*/
+.impar {
+	background-color: #FFFFFF;
+	margin-left: 5px;
+}
+
+.par {
+	background-color: #e4e4e4;
+	margin-left: 5px;
+}
+
+/* LISTAS - LINKS TROCAM DE COR E TROCA FUNDO DIV */
+ul#listagem {
+	list-style-type: none; /* retira o marcador de listas*/
+}
+
+ul#listagem li a:link {
+	text-decoration: none; /* retira o sublinhado dos links */
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+
+ul#listagem li a:hover {
+	background-color: #98c909;
+	color: #FFFFFF;
+	display: block;
+	/* finalidade de fazer com que a troca da cor do fundo seja na extensão toda do elemento */
+}
+
+ul#listagem li a:visited {
+	text-decoration: none; /* retira o sublinhado dos links */
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+
+ul#listagem {
+	width: 100%; /* uma largura para o menu */
+}
+
+ul#listagem li a:link,ul#listagem li a:visited {
+	display: block;
+	height: 1%;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+/*BTS ADMIN*/
+#bt_admin {
+	float: right;
+	margin: 0;
+}
+
+/* CAPA*/
+#atalhos_capa {
+	margin: 0 auto;
+	width: 836px;
+	height: 140px;
+	background-color: #e5e5e5;
+	border-style: dashed;
+	border-color: #999999;
+	border-width: 1px;
+}
+
+#atalhos_capa img {
+	margin: 0 auto;
+	margin: 20px;
+}
+
+#atalhos_capa img:hover {
+	margin: 0 auto;
+	margin: 19px;
+	border: dashed 1px;
+	border-color: #006600;
+}
+
+/*SEÇÃO DÚVIDAS FREQUENTES*/
+#duvidas {
+	margin: 0 auto;
+	width: 98%;
+}
+
+/*FOTOS*/
+#fotos_aberta {
+	height: 100%;
+	display: table;
+}
+
+/*CSS TEXTOS*/
+.texto_rodape {
+	font-family: Verdana, Helvetica, arial, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.texto_login {
+	font-family: Helvetica, arial, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.texto_duvidas_titulo {
+	font-family: Helvetica, arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.texto_duvidas {
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	color: #333333;
+}
+
+/* REFERENTE A LISTAGEM (lst) */
+.lstitulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.lstitulo:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.lsdados {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+
+.lseditar {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #006600;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.lseditar:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #006600;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.lsexcluir {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #CC0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.lsexcluir:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #CC0000;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.td_lst {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #F1F1F1;
+	background-repeat: repeat-x;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #CCCCCC;
+	height: 22px;
+	border-bottom-width: 1px;
+	border-bottom-color: #CCCCCC;
+}
+
+.pagirodape {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	text-decoration: none;
+	height: 26px;
+}
+
+.pagiLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000; /* Muda a cor da escrita na paginacao */
+	text-decoration: none;
+}
+
+/* REFERENTE A EDICAO (edt) */
+.label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	border-right-width: 5px;
+	border-right-style: solid;
+	border-right-color: #999999;
+	height: 20px;
+	padding-left: 8px;
+	background-color: #FFFFFF;
+}
+
+.formulario {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	text-decoration: none;
+	padding: 1px;
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+	border: 1px solid #999999;
+	background-color: #FFFFFF;
+	height: 17px;
+}
+
+.lupa { ]
+	padding: 1px;
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+	border: 1px solid #F1F1F1;
+	background-color: #F1F1F1;
+	height: 17px;
+}
+
+.multi {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	text-decoration: none;
+	padding: 1px;
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+	border: 1px solid #999999;
+	background-color: #FFFFFF;
+}
+
+.table_border {
+	border: 1px solid #cccccc;
+	background-color: #F8F8F8;
+}
+
+.tr_color {
+	background-color: #F6F6F6;
+	height: 26px;
+}
+
+.tr_alert {
+	background-color: #CC0000;
+	height: 26px;
+}
+
+.tr_text_alert {
+	font-family: Arial, Verdana;
+	font-size: 11;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.fundo_pesquisa {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000; /* Muda a cor da escita do filtro */
+	text-decoration: none;
+	background-color: #F1F1F1;
+	border: solid 1px #CCCCCC;
+}
+
+/* Mensagem para o usuario */
+.success {
+	color: #FFFFFF;
+	background-color: #98c909;
+	padding: 4px 4px 4px 4px;
+	font-family: Arial, Verdana;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* Referente as msgs de validacao de formularios */
+.error {
+	font-family: Verdana, Arial;
+	font-size: 11px;
+	color: #990000;
+	font-style: italic;
+}
+
+.default_text {
+	font-family: Arial, Verdana;
+	font-size: 12px;
+	color: #333333;
+}
